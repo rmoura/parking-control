@@ -1,0 +1,72 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/rmoura/projetos-teste/mlabs/parking-control/app/models/payment.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/rmoura/projetos-teste/mlabs/parking-control/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/rmoura/projetos-teste/mlabs/parking-control/app/models/ticket.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/rmoura/projetos-teste/mlabs/parking-control/app/jobs/application_job.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/rmoura/projetos-teste/mlabs/parking-control/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1588027999
+  }
+}

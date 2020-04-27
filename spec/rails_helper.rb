@@ -1,10 +1,14 @@
 # frozen_string_literal: true
 
-require 'simplecov'
-
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
+
+if ENV['RAILS_ENV'] == 'test'
+  require 'simplecov'
+
+  SimpleCov.start :rails
+end
 
 require File.expand_path('../config/environment', __dir__)
 require 'money'
@@ -18,6 +22,7 @@ Money.rounding_mode  = BigDecimal::ROUND_HALF_EVEN
 if Rails.env.production?
   abort('The Rails environment is running in production mode!')
 end
+
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
