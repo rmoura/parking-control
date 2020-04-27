@@ -6,5 +6,5 @@ class Ticket < ApplicationRecord
   validates :plate, :code, uniqueness: { case_sensitive: false }
 
   # Relations
-  has_one :payment
+  has_one :payment, dependent: :nullify
 end
