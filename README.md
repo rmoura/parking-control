@@ -84,12 +84,6 @@ $ docker-compose run app rake db:create
 $ docker-compose run app rake db:migrate
 ```
 
-Execução dos testes automatizados:
-
-```
-$ docker-compose run specs
-```
-
 Checar se aplicação subiu corretamente:
 
 ```
