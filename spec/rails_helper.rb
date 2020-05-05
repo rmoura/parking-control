@@ -7,7 +7,9 @@ ENV['RAILS_ENV'] ||= 'test'
 if ENV['RAILS_ENV'] == 'test'
   require 'simplecov'
 
-  SimpleCov.start :rails
+  SimpleCov.start :rails do
+    add_group 'Serializers', 'app/serializers'
+  end
 end
 
 require File.expand_path('../config/environment', __dir__)
@@ -16,7 +18,7 @@ require 'factory_bot'
 
 # MoneyRails Configuration
 Money.locale_backend = :i18n
-Money.rounding_mode  = BigDecimal::ROUND_HALF_EVEN
+Money.rounding_mode  = BigDecimal::ROUND_HALF_UP
 
 # Prevent database truncation if the environment is production
 if Rails.env.production?
