@@ -1,0 +1,369 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API V1",
+    "version": "v1"
+  },
+  "paths": {
+    "/parking": {
+      "post": {
+        "summary": "CREATE Ticket",
+        "tags": [
+          "Tickets"
+        ],
+        "parameters": [
+
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "plate": {
+                    "type": "string",
+                    "example": "ABC-1234"
+                  }
+                },
+                "required": [
+                  "plate"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "ticket created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "example": 1
+                    },
+                    "code": {
+                      "type": "string",
+                      "example": "XYZ123"
+                    },
+                    "plate": {
+                      "type": "string",
+                      "example": "ABC-1234"
+                    },
+                    "left": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "time": {
+                      "type": "string",
+                      "example": "1 minute"
+                    },
+                    "paid": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "created_at": {
+                      "type": "string",
+                      "example": "2020-12-13 20:20:34"
+                    },
+                    "updated_at": {
+                      "type": "string",
+                      "example": "2020-12-13 20:20:34"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "plate didnt out",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errors": {
+                      "example": "plate  is invalid! Expected format: XYZ-1234"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/parking/{id}/out": {
+      "put": {
+        "summary": "Checkout Ticket",
+        "tags": [
+          "Tickets"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ticket updated",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "example": 1
+                    },
+                    "code": {
+                      "type": "string",
+                      "example": "XYZ123"
+                    },
+                    "plate": {
+                      "type": "string",
+                      "example": "ABC-1234"
+                    },
+                    "left": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "time": {
+                      "type": "string",
+                      "example": "1 minute"
+                    },
+                    "paid": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "created_at": {
+                      "type": "string",
+                      "example": "2020-12-13 20:20:34"
+                    },
+                    "updated_at": {
+                      "type": "string",
+                      "example": "2020-12-13 20:20:34"
+                    }
+                  },
+                  "required": [
+
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "ticket not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errors": {
+                      "example": "Couldn't find Ticket with 'id'=23"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "pending payment",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errors": {
+                      "example": "Pending payment!"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/parking/{id}/pay": {
+      "put": {
+        "summary": "PAY Ticket",
+        "tags": [
+          "Tickets"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ticket updated",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "example": 1
+                    },
+                    "code": {
+                      "type": "string",
+                      "example": "XYZ123"
+                    },
+                    "plate": {
+                      "type": "string",
+                      "example": "ABC-1234"
+                    },
+                    "left": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "time": {
+                      "type": "string",
+                      "example": "1 minute"
+                    },
+                    "paid": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "created_at": {
+                      "type": "string",
+                      "example": "2020-12-13 20:20:34"
+                    },
+                    "updated_at": {
+                      "type": "string",
+                      "example": "2020-12-13 20:20:34"
+                    }
+                  },
+                  "required": [
+
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "ticket not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errors": {
+                      "example": "Couldn't find Ticket with 'id'=23"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "payment already finalized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errors": {
+                      "example": "Payment already finalized!"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/parking/{plate}": {
+      "get": {
+        "summary": "Retrieves a ticket",
+        "tags": [
+          "Tickets"
+        ],
+        "parameters": [
+          {
+            "name": "plate",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "tickets not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "current_page": {
+                      "type": "integer",
+                      "example": 1
+                    },
+                    "per_page": {
+                      "type": "integer",
+                      "example": 10
+                    },
+                    "total_entries": {
+                      "type": "integer",
+                      "example": 0
+                    },
+                    "entries": {
+                      "type": "array",
+                      "example": [
+
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "plate not valid",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errors": {
+                      "example": "plate is invalid! Expected format: XYZ-1234"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "http://{localhost}",
+      "variables": {
+        "localhost": {
+          "default": "localhost:3000"
+        }
+      }
+    }
+  ]
+}
