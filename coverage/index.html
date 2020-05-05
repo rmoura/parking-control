@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Parking-control</title>
+    <title>Code coverage for App</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.12.2/application.js' type='text/javascript'></script>
     <link href='./assets/0.12.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
-    <link rel="shortcut icon" type="image/png" href="./assets/0.12.2/favicon_red.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.12.2/favicon_green.png" />
     <link rel="icon" type="image/png" href="./assets/0.12.2/favicon.png" />
   </head>
 
@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-04-27T19:53:19-03:00">2020-04-27T19:53:19-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-06-07T04:10:40-03:00">2020-06-07T04:10:40-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,15 +22,15 @@
   <h2>
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
-      <span class="red">
-  71.43%
+      <span class="green">
+  98.3%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.71
+       <span class="green">
+         5.19
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>5</b> files in total.
+    <b>18</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>14</b> relevant lines,
-    <span class="green"><b>10</b> lines covered</span> and
-    <span class="red"><b>4</b> lines missed. </span>
-    (<span class="red">
-  71.43%
+    <b>176</b> relevant lines,
+    <span class="green"><b>173</b> lines covered</span> and
+    <span class="red"><b>3</b> lines missed. </span>
+    (<span class="green">
+  98.3%
 </span>
 )
   </div>
@@ -71,18 +71,84 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#2004c385b15c248eeda4afb1c310bf7886f186e2" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">0.00 %</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">2</td>
+            <td class="strong t-file__name"><a href="#e102bf8a77601f9cc6eb7c1904641c4bf691fc4e" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">0.00</td>
+            <td class="cell--number">2.40</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#ed44494707cc640748a56651ab032dea9e1a0fbf" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
+            <td class="strong t-file__name"><a href="#16456be93b39896a1c8728495ddab4ccef4f025c" class="src_link" title="app/controllers/concerns/error_handler.rb">app/controllers/concerns/error_handler.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">45</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">7.44</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#d2f727eeb39b7ac5327ea138344f427c2995067d" class="src_link" title="app/controllers/concerns/serializable.rb">app/controllers/concerns/serializable.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">2.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#72451582b93ec450627d4145a05f1586d2527830" class="src_link" title="app/controllers/concerns/tickets/error.rb">app/controllers/concerns/tickets/error.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#729bc1bf8dc1c0917258956b1fa88c73341b5204" class="src_link" title="app/controllers/concerns/tickets/error_handler.rb">app/controllers/concerns/tickets/error_handler.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">93.75 %</td>
+            <td class="cell--number">56</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">2.75</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#a229160c9b6ccf777ec754ff2e732e630b7f3455" class="src_link" title="app/controllers/concerns/tickets/filters.rb">app/controllers/concerns/tickets/filters.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">31</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">3.73</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#5f010f34780c0146991d1df04e7ca3a69625311f" class="src_link" title="app/controllers/v1/tickets_controller.rb">app/controllers/v1/tickets_controller.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">54</td>
+            <td class="cell--number">30</td>
+            <td class="cell--number">30</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">2.73</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#47f0f655bf38d41edadbc2ba181c631e77a1454a" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
             <td class="red strong cell--number t-file__coverage">0.00 %</td>
             <td class="cell--number">9</td>
             <td class="cell--number">2</td>
@@ -93,7 +159,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#924a2b006c9f1818e6b9aa7b1c3a4280a5f0e3c3" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
+            <td class="strong t-file__name"><a href="#138d391bde70c35dde8810f5b78c70c80df5f7e2" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">5</td>
             <td class="cell--number">2</td>
@@ -104,24 +170,101 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#2f42d49d3874e3539347002825e39791946f6fa5" class="src_link" title="app/models/payment.rb">app/models/payment.rb</a></td>
+            <td class="strong t-file__name"><a href="#735e1d9ca12b2229ae111225c753934c78495600" class="src_link" title="app/models/concerns/code_generator.rb">app/models/concerns/code_generator.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">13</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">12.14</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#625a3cba3eb6bd25415a26ed323ccedb951a58c8" class="src_link" title="app/models/concerns/paginatable.rb">app/models/concerns/paginatable.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">2.80</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#9c16d0ca1a8d97b12ef546a4125921351ebf3417" class="src_link" title="app/models/concerns/plate_validator.rb">app/models/concerns/plate_validator.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">21</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">16.10</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#ec8d28c58d3ef3482905365d90279a6969d2e623" class="src_link" title="app/models/concerns/reservation.rb">app/models/concerns/reservation.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">36</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">10.26</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#75ecd5c5fb01ba8f4000e996bfa1da7c47fbc997" class="src_link" title="app/models/ticket.rb">app/models/ticket.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">9</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#7b2f423a804ab6149959de4b6b60ef665ee35dc3" class="src_link" title="app/models/ticket.rb">app/models/ticket.rb</a></td>
+            <td class="strong t-file__name"><a href="#f8a6a69d117c1bf3d0b151de2b5570d72ad66f06" class="src_link" title="app/serializers/application_serializer.rb">app/serializers/application_serializer.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">10</td>
             <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">1</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#c142c35f6dbe68021a6a83418af535424f11d97d" class="src_link" title="app/serializers/collection_serializer.rb">app/serializers/collection_serializer.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">27</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">3.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#be025236b2d77cf7e8f1ea194ddc8c7c760ead88" class="src_link" title="app/serializers/error_serializer.rb">app/serializers/error_serializer.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">4.57</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#076038b456474d80b6496ae975e4a1f105948c40" class="src_link" title="app/serializers/v1/ticket_serializer.rb">app/serializers/v1/ticket_serializer.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">4.67</td>
             
           </tr>
         
@@ -136,15 +279,15 @@
   <h2>
     <span class="group_name">Controllers</span>
     (<span class="covered_percent">
-      <span class="red">
-  0.0%
+      <span class="green">
+  98.95%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.0
+       <span class="green">
+         3.61
        </span>
     </span> hits/line
     )
@@ -153,15 +296,15 @@
   <a name="Controllers"></a>
 
   <div>
-    <b>1</b> files in total.
+    <b>7</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>2</b> relevant lines,
-    <span class="green"><b>0</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed. </span>
-    (<span class="red">
-  0.0%
+    <b>95</b> relevant lines,
+    <span class="green"><b>94</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed. </span>
+    (<span class="green">
+  98.95%
 </span>
 )
   </div>
@@ -185,13 +328,79 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#2004c385b15c248eeda4afb1c310bf7886f186e2" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">0.00 %</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">2</td>
+            <td class="strong t-file__name"><a href="#e102bf8a77601f9cc6eb7c1904641c4bf691fc4e" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">0.00</td>
+            <td class="cell--number">2.40</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#16456be93b39896a1c8728495ddab4ccef4f025c" class="src_link" title="app/controllers/concerns/error_handler.rb">app/controllers/concerns/error_handler.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">45</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">7.44</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#d2f727eeb39b7ac5327ea138344f427c2995067d" class="src_link" title="app/controllers/concerns/serializable.rb">app/controllers/concerns/serializable.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">2.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#72451582b93ec450627d4145a05f1586d2527830" class="src_link" title="app/controllers/concerns/tickets/error.rb">app/controllers/concerns/tickets/error.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#729bc1bf8dc1c0917258956b1fa88c73341b5204" class="src_link" title="app/controllers/concerns/tickets/error_handler.rb">app/controllers/concerns/tickets/error_handler.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">93.75 %</td>
+            <td class="cell--number">56</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">2.75</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#a229160c9b6ccf777ec754ff2e732e630b7f3455" class="src_link" title="app/controllers/concerns/tickets/filters.rb">app/controllers/concerns/tickets/filters.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">31</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">3.73</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#5f010f34780c0146991d1df04e7ca3a69625311f" class="src_link" title="app/controllers/v1/tickets_controller.rb">app/controllers/v1/tickets_controller.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">54</td>
+            <td class="cell--number">30</td>
+            <td class="cell--number">30</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">2.73</td>
             
           </tr>
         
@@ -270,8 +479,8 @@
      </span>
      covered at
      <span class="covered_strength">
-       <span class="yellow">
-         1.0
+       <span class="green">
+         8.96
        </span>
     </span> hits/line
     )
@@ -280,12 +489,12 @@
   <a name="Models"></a>
 
   <div>
-    <b>3</b> files in total.
+    <b>6</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>10</b> relevant lines,
-    <span class="green"><b>10</b> lines covered</span> and
+    <b>52</b> relevant lines,
+    <span class="green"><b>52</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -312,7 +521,7 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#924a2b006c9f1818e6b9aa7b1c3a4280a5f0e3c3" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
+            <td class="strong t-file__name"><a href="#138d391bde70c35dde8810f5b78c70c80df5f7e2" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">5</td>
             <td class="cell--number">2</td>
@@ -323,22 +532,55 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#2f42d49d3874e3539347002825e39791946f6fa5" class="src_link" title="app/models/payment.rb">app/models/payment.rb</a></td>
+            <td class="strong t-file__name"><a href="#735e1d9ca12b2229ae111225c753934c78495600" class="src_link" title="app/models/concerns/code_generator.rb">app/models/concerns/code_generator.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">13</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">12.14</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#7b2f423a804ab6149959de4b6b60ef665ee35dc3" class="src_link" title="app/models/ticket.rb">app/models/ticket.rb</a></td>
+            <td class="strong t-file__name"><a href="#625a3cba3eb6bd25415a26ed323ccedb951a58c8" class="src_link" title="app/models/concerns/paginatable.rb">app/models/concerns/paginatable.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">2.80</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#9c16d0ca1a8d97b12ef546a4125921351ebf3417" class="src_link" title="app/models/concerns/plate_validator.rb">app/models/concerns/plate_validator.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">21</td>
             <td class="cell--number">10</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">16.10</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#ec8d28c58d3ef3482905365d90279a6969d2e623" class="src_link" title="app/models/concerns/reservation.rb">app/models/concerns/reservation.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">36</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">10.26</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#75ecd5c5fb01ba8f4000e996bfa1da7c47fbc997" class="src_link" title="app/models/ticket.rb">app/models/ticket.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">9</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -519,7 +761,7 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#ed44494707cc640748a56651ab032dea9e1a0fbf" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
+            <td class="strong t-file__name"><a href="#47f0f655bf38d41edadbc2ba181c631e77a1454a" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
             <td class="red strong cell--number t-file__coverage">0.00 %</td>
             <td class="cell--number">9</td>
             <td class="cell--number">2</td>
@@ -593,6 +835,108 @@
 </div>
 
         
+          <div class="file_list_container" id="Serializers">
+  <h2>
+    <span class="group_name">Serializers</span>
+    (<span class="covered_percent">
+      <span class="green">
+  100.0%
+</span>
+
+     </span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         3.89
+       </span>
+    </span> hits/line
+    )
+  </h2>
+
+  <a name="Serializers"></a>
+
+  <div>
+    <b>4</b> files in total.
+  </div>
+
+  <div class="t-line-summary">
+    <b>27</b> relevant lines,
+    <span class="green"><b>27</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed. </span>
+    (<span class="green">
+  100.0%
+</span>
+)
+  </div>
+
+  
+
+  <div class="file_list--responsive">
+    <table class="file_list">
+      <thead>
+        <tr>
+          <th>File</th>
+          <th class="cell--number">% covered</th>
+          <th class="cell--number">Lines</th>
+          <th class="cell--number">Relevant Lines</th>
+          <th class="cell--number">Lines covered</th>
+          <th class="cell--number">Lines missed</th>
+          <th class="cell--number">Avg. Hits / Line</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#f8a6a69d117c1bf3d0b151de2b5570d72ad66f06" class="src_link" title="app/serializers/application_serializer.rb">app/serializers/application_serializer.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#c142c35f6dbe68021a6a83418af535424f11d97d" class="src_link" title="app/serializers/collection_serializer.rb">app/serializers/collection_serializer.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">27</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">3.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#be025236b2d77cf7e8f1ea194ddc8c7c760ead88" class="src_link" title="app/serializers/error_serializer.rb">app/serializers/error_serializer.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">4.57</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#076038b456474d80b6496ae975e4a1f105948c40" class="src_link" title="app/serializers/v1/ticket_serializer.rb">app/serializers/v1/ticket_serializer.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">4.67</td>
+            
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+        
       </div>
 
       <div id="footer">
@@ -603,12 +947,12 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="2004c385b15c248eeda4afb1c310bf7886f186e2">
+        <div class="source_table" id="e102bf8a77601f9cc6eb7c1904641c4bf691fc4e">
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
     <h4>
-      <span class="red">
-  0.0%
+      <span class="green">
+  100.0%
 </span>
 
       lines covered
@@ -617,9 +961,9 @@
     
 
     <div class="t-line-summary">
-      <b>2</b> relevant lines.
-      <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <b>5</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -652,8 +996,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="3">
-            
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
             
 
             
@@ -663,7 +1007,73 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="4">
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  include ErrorHandler</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  include Serializable</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def not_found</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="8">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    render json: { errors: &#39;API endpoint Not Found!&#39; }, status: :not_found</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
@@ -678,7 +1088,2459 @@
 </div>
 
       
-        <div class="source_table" id="ed44494707cc640748a56651ab032dea9e1a0fbf">
+        <div class="source_table" id="16456be93b39896a1c8728495ddab4ccef4f025c">
+  <div class="header">
+    <h3>app/controllers/concerns/error_handler.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>18</b> relevant lines.
+      <span class="green"><b>18</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">module ErrorHandler</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  extend ActiveSupport::Concern</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  included do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="23" data-linenumber="7">
+            <span class="hits">23</span>
+            
+
+            
+
+            <code class="ruby">    rescue_from StandardError, with: -&gt;(exception) { handler(exception) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def render_unprocessable_entity(exception)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="11">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    render(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">      json:   { errors: ErrorSerializer.new(exception.record).serialize },</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">      status: :unprocessable_entity</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">    )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def render_not_found(exception = nil)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="18">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    message = exception ? exception.message : &#39;Record Not Found&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="20">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    render(json: { errors: message }, status: :not_found)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def render_internal_server_error(*)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    render(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">      json:   { errors: &#39;Internal Server Error&#39; },</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">      status: :internal_server_error</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">    )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def handler(exception)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="22" data-linenumber="33">
+            <span class="hits">22</span>
+            
+
+            
+
+            <code class="ruby">    action   = error_mapping.key(exception.class)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="22" data-linenumber="34">
+            <span class="hits">22</span>
+            
+
+            
+
+            <code class="ruby">    action ||= :render_internal_server_error</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="22" data-linenumber="36">
+            <span class="hits">22</span>
+            
+
+            
+
+            <code class="ruby">    method(action).call(exception)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def error_mapping</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby">    {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="22" data-linenumber="41">
+            <span class="hits">22</span>
+            
+
+            
+
+            <code class="ruby">      render_unprocessable_entity: ActiveRecord::RecordInvalid,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="42">
+            
+            
+
+            
+
+            <code class="ruby">      render_not_found:            ActiveRecord::RecordNotFound</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="43">
+            
+            
+
+            
+
+            <code class="ruby">    }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="44">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="45">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="d2f727eeb39b7ac5327ea138344f427c2995067d">
+  <div class="header">
+    <h3>app/controllers/concerns/serializable.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>4</b> relevant lines.
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">module Serializable</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  extend ActiveSupport::Concern</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def serialize(relation, serializer = nil)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="7">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    CollectionSerializer.new(relation, serializer)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="72451582b93ec450627d4145a05f1586d2527830">
+  <div class="header">
+    <h3>app/controllers/concerns/tickets/error.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">module Tickets</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  module Error</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    class ReserveAlreadyDeallocated &lt; StandardError; end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    class PendingPayment            &lt; StandardError; end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    class PaymentAlreadyFinalized   &lt; StandardError; end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    class InvalidPlate              &lt; StandardError; end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    class PlateAlreadyLaunched      &lt; StandardError; end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="729bc1bf8dc1c0917258956b1fa88c73341b5204">
+  <div class="header">
+    <h3>app/controllers/concerns/tickets/error_handler.rb</h3>
+    <h4>
+      <span class="green">
+  93.75%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>16</b> relevant lines.
+      <span class="green"><b>15</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">module Tickets</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  module ErrorHandler</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    extend ActiveSupport::Concern</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def reserve_already_deallocated(*)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="8">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      render(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">        json:   { errors: &#39;Reserve %s already deallocated&#39; % @ticket.code },</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">        status: :unprocessable_entity</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">      )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def pending_payment(*)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="15">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      render(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">        json:   { errors: &#39;Pending payment!&#39; },</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">        status: :unprocessable_entity</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">      )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def payment_already_finalized(*)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="22">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      render(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">        json:   { errors: &#39;Payment already finalized!&#39; },</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">        status: :unprocessable_entity</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">      )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def plate_already_launched(*)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">      render(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">        json:   { errors: &#39;Plate already launched previously!&#39; },</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">        status: :unprocessable_entity</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby">      )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="33">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="34">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def invalid_plate(*)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="36">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      render(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
+            <code class="ruby">        json: {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">          errors: &#39;plate %s is invalid! Expected format: XYZ-1234&#39; % params[:plate]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="39">
+            
+            
+
+            
+
+            <code class="ruby">        },</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby">        status: :unprocessable_entity</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby">      )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="42">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="43">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="45">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="46">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def error_mapping</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="22" data-linenumber="47">
+            <span class="hits">22</span>
+            
+
+            
+
+            <code class="ruby">      super.merge(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby">        reserve_already_deallocated: Tickets::Error::ReserveAlreadyDeallocated,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="49">
+            
+            
+
+            
+
+            <code class="ruby">        pending_payment:             Tickets::Error::PendingPayment,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="50">
+            
+            
+
+            
+
+            <code class="ruby">        payment_already_finalized:   Tickets::Error::PaymentAlreadyFinalized,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
+            
+            
+
+            
+
+            <code class="ruby">        invalid_plate:               Tickets::Error::InvalidPlate,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="52">
+            
+            
+
+            
+
+            <code class="ruby">        plate_already_launched:      Tickets::Error::PlateAlreadyLaunched</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="53">
+            
+            
+
+            
+
+            <code class="ruby">      )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="54">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="55">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="a229160c9b6ccf777ec754ff2e732e630b7f3455">
+  <div class="header">
+    <h3>app/controllers/concerns/tickets/filters.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>15</b> relevant lines.
+      <span class="green"><b>15</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">module Tickets</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  extend Tickets::Error</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  module Filters</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    extend ActiveSupport::Concern</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def reserve_already_deallocated?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="11" data-linenumber="10">
+            <span class="hits">11</span>
+            
+
+            
+
+            <code class="ruby">      raise Tickets::Error::ReserveAlreadyDeallocated if @ticket.left?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def pending_payment?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="14">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">      raise Tickets::Error::PendingPayment unless @ticket.paid?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def payment_already_finalized?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="18">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">      raise Tickets::Error::PaymentAlreadyFinalized if @ticket.paid?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def invalid_plate?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="22">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">      raise Tickets::Error::InvalidPlate unless PlateValidator.valid?(params[:plate])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def plate_already_out?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="10" data-linenumber="26">
+            <span class="hits">10</span>
+            
+
+            
+
+            <code class="ruby">      if Ticket.find_by(plate: params[:plate], leave_date: nil)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        raise Tickets::Error::PlateAlreadyLaunched</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="5f010f34780c0146991d1df04e7ca3a69625311f">
+  <div class="header">
+    <h3>app/controllers/v1/tickets_controller.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>30</b> relevant lines.
+      <span class="green"><b>30</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">module V1</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  class TicketsController &lt; ApplicationController</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    before_action :find_ticket, except: %i[create show]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    include Tickets::ErrorHandler</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    include Tickets::Filters</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    include Serializable</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    before_action :plate_already_out?, only: :create</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    before_action :reserve_already_deallocated?, only: :out</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    before_action :pending_payment?, only: :out</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    before_action :payment_already_finalized?, only: :pay</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    before_action :invalid_plate?, only: :show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def create</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="18">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">      ticket = Ticket.create!(permitted_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="19">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      render json: ticket, status: :created</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def out</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="23">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      @ticket.close_reservation!</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="24">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      render json: @ticket, status: :ok</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def pay</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="28">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      @ticket.update!(status: :paid)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="29">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      render json: @ticket, status: :ok</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="33">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">      tickets = Ticket.where(plate: params[:plate])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="34">
+            
+            
+
+            
+
+            <code class="ruby">                      .order(id: :desc)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby">                      .paginate(pagination_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="36">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="37">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">      render json: serialize(tickets, TicketSerializer)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="39">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="40">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="42">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def permitted_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="43">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">      params.permit(:plate)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="44">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="45">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="46">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def find_ticket</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="20" data-linenumber="47">
+            <span class="hits">20</span>
+            
+
+            
+
+            <code class="ruby">      @ticket = Ticket.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="49">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def pagination_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="51">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">      params.permit(:page, :per_page)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="52">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="53">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="54">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="47f0f655bf38d41edadbc2ba181c631e77a1454a">
   <div class="header">
     <h3>app/jobs/application_job.rb</h3>
     <h4>
@@ -808,7 +3670,7 @@
 </div>
 
       
-        <div class="source_table" id="924a2b006c9f1818e6b9aa7b1c3a4280a5f0e3c3">
+        <div class="source_table" id="138d391bde70c35dde8810f5b78c70c80df5f7e2">
   <div class="header">
     <h3>app/models/application_record.rb</h3>
     <h4>
@@ -894,9 +3756,9 @@
 </div>
 
       
-        <div class="source_table" id="2f42d49d3874e3539347002825e39791946f6fa5">
+        <div class="source_table" id="735e1d9ca12b2229ae111225c753934c78495600">
   <div class="header">
-    <h3>app/models/payment.rb</h3>
+    <h3>app/models/concerns/code_generator.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -908,8 +3770,8 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -949,51 +3811,51 @@
 
             
 
-            <code class="ruby">class Payment &lt; ApplicationRecord</code>
+            <code class="ruby">module CodeGenerator</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
-            
-
-            <code class="ruby">  # Validations</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
+          <li class="covered" data-hits="1" data-linenumber="4">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  validates :cost_cents, :discount_cents, :total_cents,</code>
+            <code class="ruby">  extend ActiveSupport::Concern</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="6">
-            
-            
-
-            
-
-            <code class="ruby">    numericality: { greater_than_or_equal: 0 }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="never" data-hits="" data-linenumber="5">
             
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def set_alphanumeric_code</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="40" data-linenumber="7">
+            <span class="hits">40</span>
+            
+
+            
+
+            <code class="ruby">    self.code = alphanumeric_code</code>
           </li>
         </div>
       
@@ -1004,23 +3866,12 @@
 
             
 
-            <code class="ruby">  # Config</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  monetize :cost_cents, :discount_cents, :total_cents, allow_nil: false</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -1031,13 +3882,24 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="never" data-hits="" data-linenumber="11">
             
             
 
             
 
-            <code class="ruby">  # Relations</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1048,12 +3910,34 @@
 
             
 
-            <code class="ruby">  belongs_to :ticket</code>
+            <code class="ruby">  def alphanumeric_code</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="covered" data-hits="40" data-linenumber="13">
+            <span class="hits">40</span>
+            
+
+            
+
+            <code class="ruby">    SecureRandom.base36.upcase</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
@@ -1068,7 +3952,848 @@
 </div>
 
       
-        <div class="source_table" id="7b2f423a804ab6149959de4b6b60ef665ee35dc3">
+        <div class="source_table" id="625a3cba3eb6bd25415a26ed323ccedb951a58c8">
+  <div class="header">
+    <h3>app/models/concerns/paginatable.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>5</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">module Paginatable</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  extend ActiveSupport::Concern</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  included do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    scope :paginate, -&gt;(args = {}) {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="10" data-linenumber="8">
+            <span class="hits">10</span>
+            
+
+            
+
+            <code class="ruby">      page(args[:page]).per(args[:per_page])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">    }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="9c16d0ca1a8d97b12ef546a4125921351ebf3417">
+  <div class="header">
+    <h3>app/models/concerns/plate_validator.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>10</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class PlateValidator &lt; ActiveModel::Validator</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  PLATE_MASK = /\A\w{3}-\d{4}\Z/</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.valid?(plate)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="74" data-linenumber="7">
+            <span class="hits">74</span>
+            
+
+            
+
+            <code class="ruby">    !!(plate =~ PLATE_MASK)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def validate(record)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="63" data-linenumber="11">
+            <span class="hits">63</span>
+            
+
+            
+
+            <code class="ruby">    unless self.class.valid?(record.plate)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="12">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">      record.errors.add :plate, message(record.plate)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def message(plate)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="19">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    &#39;%s is invalid! Expected format: XYZ-1234&#39; % plate</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="ec8d28c58d3ef3482905365d90279a6969d2e623">
+  <div class="header">
+    <h3>app/models/concerns/reservation.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>19</b> relevant lines.
+      <span class="green"><b>19</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">module Reservation</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  extend ActiveSupport::Concern</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def close_reservation!</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="7">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    update!(leave_date: Time.current)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def elapsed_time_in_words</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="16" data-linenumber="11">
+            <span class="hits">16</span>
+            
+
+            
+
+            <code class="ruby">    time = elapsed_time.zero? ? 1.minute : elapsed_time</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="16" data-linenumber="12">
+            <span class="hits">16</span>
+            
+
+            
+
+            <code class="ruby">    time.inspect</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def left?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="25" data-linenumber="16">
+            <span class="hits">25</span>
+            
+
+            
+
+            <code class="ruby">    !!leave_date</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def elapsed_time</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="20" data-linenumber="22">
+            <span class="hits">20</span>
+            
+
+            
+
+            <code class="ruby">    mm, ss = elapsed_time_in_seconds.divmod(60)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="20" data-linenumber="23">
+            <span class="hits">20</span>
+            
+
+            
+
+            <code class="ruby">    hh, mm = mm.divmod(60)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="20" data-linenumber="24">
+            <span class="hits">20</span>
+            
+
+            
+
+            <code class="ruby">    dd, hh = hh.divmod(24)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="20" data-linenumber="26">
+            <span class="hits">20</span>
+            
+
+            
+
+            <code class="ruby">    [ dd.days, hh.hours, mm.minutes ].sum</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def leave_datetime</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="20" data-linenumber="30">
+            <span class="hits">20</span>
+            
+
+            
+
+            <code class="ruby">    leave_date || Time.current</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def elapsed_time_in_seconds</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="20" data-linenumber="34">
+            <span class="hits">20</span>
+            
+
+            
+
+            <code class="ruby">    (leave_datetime - created_at).round(2)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="36">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="75ecd5c5fb01ba8f4000e996bfa1da7c47fbc997">
   <div class="header">
     <h3>app/models/ticket.rb</h3>
     <h4>
@@ -1082,8 +4807,8 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>9</b> relevant lines.
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1128,13 +4853,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  # Validations</code>
+            
+
+            <code class="ruby">  validates :plate, presence: true</code>
           </li>
         </div>
       
@@ -1145,7 +4870,7 @@
 
             
 
-            <code class="ruby">  validates :plate, :code, presence: true</code>
+            <code class="ruby">  validates :code,  uniqueness: { case_sensitive: false }</code>
           </li>
         </div>
       
@@ -1156,7 +4881,7 @@
 
             
 
-            <code class="ruby">  validates :plate, :code, uniqueness: { case_sensitive: false }</code>
+            <code class="ruby">  validates_with PlateValidator</code>
           </li>
         </div>
       
@@ -1172,29 +4897,923 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  enum status: %w[pending paid]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  include CodeGenerator</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  include Reservation</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  include Paginatable</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before_create :set_alphanumeric_code</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="f8a6a69d117c1bf3d0b151de2b5570d72ad66f06">
+  <div class="header">
+    <h3>app/serializers/application_serializer.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>1</b> relevant lines.
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class ApplicationSerializer &lt; ActiveModel::Serializer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="c142c35f6dbe68021a6a83418af535424f11d97d">
+  <div class="header">
+    <h3>app/serializers/collection_serializer.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>10</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class CollectionSerializer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  attr_reader :relation, :serializer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def initialize(relation, serializer)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="7">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @relation   = relation</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="8">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @serializer = serializer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def as_json(*)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">    {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="13">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">      current_page:  relation.current_page,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">      per_page:      relation.limit_value,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">      total_entries: relation.model.count,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">      entries:       entries</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">    }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def entries</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="23">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    ActiveModelSerializers::SerializableResource.new(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">      relation, each_serializer: serializer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">    )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="be025236b2d77cf7e8f1ea194ddc8c7c760ead88">
+  <div class="header">
+    <h3>app/serializers/error_serializer.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class ErrorSerializer &lt; ApplicationSerializer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  attr_reader :record</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def initialize(record)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="6" data-linenumber="7">
+            <span class="hits">6</span>
+            
+
+            
+
+            <code class="ruby">    @record = record</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="never" data-hits="" data-linenumber="8">
             
             
 
             
 
-            <code class="ruby">  # Relations</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  has_one :payment</code>
+            <code class="ruby">  def serialize</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="6" data-linenumber="11">
+            <span class="hits">6</span>
+            
+
+            
+
+            <code class="ruby">    record.errors.messages.map do |field, details|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="16" data-linenumber="12">
+            <span class="hits">16</span>
+            
+
+            
+
+            <code class="ruby">      details.map { |detail| &#39;%s %s&#39; % [field, detail] }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">    end.flatten</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="076038b456474d80b6496ae975e4a1f105948c40">
+  <div class="header">
+    <h3>app/serializers/v1/ticket_serializer.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>9</b> relevant lines.
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">module V1</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  class TicketSerializer &lt; ApplicationSerializer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    attributes :id, :code, :plate, :left, :time, :paid, :created_at, :updated_at</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def time</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="12" data-linenumber="8">
+            <span class="hits">12</span>
+            
+
+            
+
+            <code class="ruby">      object.elapsed_time_in_words</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def left</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="12" data-linenumber="12">
+            <span class="hits">12</span>
+            
+
+            
+
+            <code class="ruby">      object.left?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def paid</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="12" data-linenumber="16">
+            <span class="hits">12</span>
+            
+
+            
+
+            <code class="ruby">      object.paid?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
