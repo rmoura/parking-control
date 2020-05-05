@@ -1,10 +1,15 @@
 # frozen_string_literal: true
 
 class Ticket < ApplicationRecord
-  # Validations
-  validates :plate, :code, presence: true
-  validates :plate, :code, uniqueness: { case_sensitive: false }
+  validates :plate, presence: true
+  validates :code,  uniqueness: { case_sensitive: false }
+  validates_with PlateValidator
 
-  # Relations
-  has_one :payment, dependent: :nullify
+  enum status: %w[pending paid]
+
+  include CodeGenerator
+  include Reservation
+  include Paginatable
+
+  before_create :set_alphanumeric_code
 end
