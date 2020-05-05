@@ -27,11 +27,11 @@ services:
     ports:
       - '3000:3000'
 
-#  specs:
-#    <<: *base
-#    container_name: parking_control.specs
-#    command: /bin/sh -c "rails db:test:prepare && bundle exec rspec spec"
-#    env_file: .env.test
+  specs:
+    <<: *base
+    container_name: parking_control.specs
+    command: /bin/sh -c "rails db:test:prepare && bundle exec rspec spec"
+    env_file: .env.test
 
   db:
     hostname: db
