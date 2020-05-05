@@ -3,10 +3,14 @@
 class CreateTickets < ActiveRecord::Migration[6.0]
   def change
     create_table :tickets do |t|
-      t.string :plate, index: { unique: true }, null: false
-      t.string :code,  index: { unique: true }, null: false
+      enable_extension :citext
 
-      t.timestamps null: false
+      t.citext   :plate,  index: true,             null: false
+      t.string   :code,   index: { unique: true }, null: false
+      t.datetime :leave_date
+      t.integer  :status, default: 0,              null: false
+
+      t.timestamps
     end
   end
 end
