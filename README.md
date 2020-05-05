@@ -56,6 +56,21 @@ Para a opção com Docker, instalar:
 
 ## Configuração com Docker
 
+Para deploy localmente, basta copiar o arquivo `.env.sample` para apenas `.env`, já para deploy com acesso a banco de dados específico basta ajustar `.env` com as variáveis de ambiente adequadas da seguinte forma:
+
+```
+$ cp .env{.sample,}
+```
+
+Editar variáveis contidas neste arquivo:
+
+```
+$ DATABASE_URL=postgres://<username>:<password>@<hostname>:5432/<database_name>
+$ SECRET_KEY_BASE=<valor alfanumérico com 128 caracteres>
+```
+
+No arquivo `.env.sample` segue valores definidos como exemplo para ajuste.
+
 Iniciar processo de build e start dos containers para subir os serviços:
 
 ```
