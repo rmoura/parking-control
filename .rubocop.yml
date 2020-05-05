@@ -36,3 +36,60 @@ Style/AsciiComments:
 
 Style/BlockComments:
   Enabled: false
+
+Layout/HashAlignment:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
+Style/FormatString:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Lint/UselessAssignment:
+  Enabled: false
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  Enabled: false
+
+Rails/EnumHash:
+  Enabled: false
+
+Naming/FileName:
+  Enabled: true
+  Exclude:
+    - "config/initializers/rswag-ui.rb"
+
+Layout/ExtraSpacing:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - "spec/controllers/concerns/tickets/filters_spec.rb"
+    - "spec/controllers/v1/tickets_controller_spec.rb"
+    - "spec/integration/tickets_spec.rb"
+    - "spec/models/concerns/plate_validator_spec.rb"
+    - "spec/models/concerns/reservation_spec.rb"
+    - "spec/models/ticket_spec.rb"
+
+Style/Semicolon:
+  Enabled: false
+
+Style/BlockDelimiters:
+  Enabled: true
+  Exclude:
+    - "spec/controllers/concerns/tickets/filters_spec.rb"
+    - "spec/factories/ticket.rb"
