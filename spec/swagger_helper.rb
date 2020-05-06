@@ -25,6 +25,14 @@ RSpec.configure do |config|
       paths: {},
       servers: [
         {
+          url: 'https://{heroku}',
+          variables: {
+            heroku: {
+              default: 'rmoura-parking-control.herokuapp.com'
+            }
+          }
+        },
+        {
           url: 'http://{localhost}',
           variables: {
             localhost: {
